@@ -5,7 +5,7 @@ function Home() {
     <main>
       <h1>Bem vindo ao Gerenciador de Eventos</h1>
 
-      <p>Aqui voce fica por dentro dos eventos</p>
+      <p>Aqui você fica por dentro dos eventos</p>
       <p>Eventos cadstrados:</p>
       {/*Exibindo os eventos*/}
       
@@ -26,7 +26,13 @@ function Home() {
         data="15/11/2025"
         local="Auditório"
 />
-    
+<Evento nome="Volta das ferias"
+        data="02/12/2025"
+        local="EEB Tancredo de Almeida Neves"
+/>
+
+
+
     </main>
   );
 }

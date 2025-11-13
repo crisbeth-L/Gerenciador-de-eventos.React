@@ -8,6 +8,8 @@ import "./header/header.css";
 import "./footer/footer.css";
 
 
+
+
 function App() {
   return (
     <Router>
@@ -17,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
 
         <Footer />

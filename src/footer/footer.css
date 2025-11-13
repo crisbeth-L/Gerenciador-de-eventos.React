@@ -2,7 +2,7 @@ footer{
     width: 100%;                        /* Ocupa toda a largura */
     background-color: #e27eda;          /* Azul padrão SENAI */
     color: rgb(255, 255, 255);                       /* Texto branco */
-    padding: 20px 0;                    /* Espaçamento interno */
+    padding: 10px 0;                    /* Espaçamento interno */
     font-size: 1.6em;                   /* Tamanho de texto maior */
     font-weight: bold;                  /* Texto em negrito */
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); 
@@ -10,5 +10,5 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #ffffff;
+    background: linear-gradient(to right, rgba(235, 214, 255, 0.8), rgba(1, 1, 94, 0.2));
   }
