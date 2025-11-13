@@ -12,7 +12,7 @@
   /* Define as cores, fonte e alinhamento geral */
   body {
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-    background-color: #976bd1; /* Fundo cinza-claro */
+    background: linear-gradient(to right, rgba(146, 29, 255, 0.8), rgba(0,0,255,0.2));
     color: #333;               /* Cor principal do texto */
     text-align: center;        /* Centraliza textos genéricos */
     min-height: 100vh;         /* Garante altura mínima de tela cheia */
@@ -24,13 +24,9 @@
     flex-direction: column;    /* Elementos empilhados (de cima para baixo) */
     align-items: center;       /* Centraliza os itens na horizontal */
     padding-bottom: 80px;      /* Espaço reservado para o rodapé fixo */
-  }
+  }  
   
-  /* ===============================
-     CABEÇALHO (HEADER)
-     =============================== */
- 
-  
+
   /* Estilo do menu principal de navegação */
   .menu-principal {
     margin-top: 10px;
@@ -61,8 +57,6 @@
   }
 
 
-
-  
   /* Título principal das páginas */
   h1 {
     color: #005b96;
@@ -72,7 +66,7 @@
   
   /* Parágrafos genéricos */
   p {
-    color: #444;
+    color: #000000;
     line-height: 1.5; /* Espaçamento entre linhas */
     margin-left: auto; 
     text-align: center;
@@ -95,29 +89,36 @@
     font-size: 1em;                  /* Tamanho padrão */
     transition: background-color 0.3s ease; /* Transição suave no hover */
   }
-  
   button:hover,
-  .btn:hover {
-    background-color: #005b96;       /* Azul mais escuro ao passar o mouse */
+.btn:hover {
+  background-color: #005b96;       /* Azul mais escuro ao passar o mouse */
+}
+
+/* ===============================
+   CARDS DE EVENTOS
+   =============================== */
+
+.card-evento {
+  background-color: white;               /* Fundo branco */
+  border-radius: 10px;                   /* Cantos arredondados */
+  padding: 20px;
+}
+
+  .evento {
+    background: linear-gradient(to right, rgba(129, 2, 247, 0.8), rgba(0,0,255,0.2));
+    padding:20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,1,1.2);
+    width: 400px;
+    text-align: left;
+    margin-bottom: 20px; /* separa verticalmente */
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.3s ease;
   }
   
-  /* ===============================
-     CARDS DE EVENTOS
-     =============================== */
-  
-  .card-evento {
-    background-color: white;               /* Fundo branco */
-    border-radius: 10px;                   /* Cantos arredondados */
-    padding: 20px;
+  .evento:hover {
+    transform: scale(1.05);
+    background-color: #d155ff;
   }
 
-  .container{
-    .evento {
-      background-color: rgb(125, 72, 209);
-      padding:20px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,1,1.2);
-      width: 500px;
-      text-align: left;
-    }
-  }
+  

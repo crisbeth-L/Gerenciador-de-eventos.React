@@ -8,8 +8,6 @@ import "./header/header.css";
 import "./footer/footer.css";
 
 
-
-
 function App() {
   return (
     <Router>
