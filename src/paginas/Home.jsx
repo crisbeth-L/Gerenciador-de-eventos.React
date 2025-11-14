@@ -30,6 +30,10 @@ function Home() {
         data="02/12/2025"
         local="EEB Tancredo de Almeida Neves"
 />
+<Evento nome=" Publicação do Novo capitulo de TADC"
+        data="12/12/2025"
+        local="YouTube"
+/>
 
 
 

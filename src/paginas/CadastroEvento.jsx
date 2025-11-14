@@ -58,7 +58,7 @@ function CadastroEvento({ onCadastrar }) {
                 onChange={(e) => setLocal(e.target.value)}
                 required
                 />
-                <button type="submit" className="btn-salvar"> Salvar Eventos</button>
+                <button type="submit" className="btn-salvar"> Salvar Evento</button>
                <button type="submit" className="btn-salvar"> Voltar </button>
             </form>
         </div>

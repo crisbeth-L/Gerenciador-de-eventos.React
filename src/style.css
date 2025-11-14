@@ -120,4 +120,83 @@
     background-color: #d155ff;
   }
 
-  
+  .cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #0072bb;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+/* Container principal do formulário */
+.cadastroEvento-container {
+  background: linear-gradient(to right, #8e2de2, #4a00e0); /* fundo roxo degradê */
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+/* Título */
+.cadastroEvento-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+/* Formulário */
+.form-evento {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.form-evento label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+/* Inputs */
+.form-evento input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Botões */
+.btn-salvar {
+  background-color: #0072bb;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-salvar:hover {
+  background-color: #005b96;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .cadastroEvento-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
