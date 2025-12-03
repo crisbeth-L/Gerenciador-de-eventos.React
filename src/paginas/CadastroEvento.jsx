@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./CadastroEvento.css"; // Certifique-se de que esse arquivo existe
+import "./CadastroEvento.css";
 
 function CadastroEvento({ onCadastrar }) {
   const [nome, setNome] = useState("");
@@ -81,4 +81,4 @@ function CadastroEvento({ onCadastrar }) {
   );
 }
 
-export default CadastroEvento;
+export default CadastroEvento

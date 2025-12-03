@@ -9,7 +9,9 @@ import "./style.css";
 import "./header/header.css";
 import "./footer/footer.css";
 import "./paginas/CadastroEvento.css";
-import "./paginas/Modal.css";
+import "./componentes/Modal.css";
+import Login from "./paginas/Login";
+
 function App() {
   const [eventos, setEventos] = useState([]);
 
@@ -24,7 +26,9 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* Agora a rota inicial "/" mostra o Login */}
+          <Route path="/" element={<Login />} /> 
+          <Route path="/home" element={<Home eventos={eventos} />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route
             path="/CadastroEvento"
