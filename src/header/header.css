@@ -1,11 +1,29 @@
 header {
-  width: 100%;                        /* Ocupa toda a largura */
-  background-color:#4366be;          /* Azul escuro corporativo */
-  color: black;                     /* Texto branco */
-  padding: 15px 0;                    /* Espaçamento interno */
-  font-size: 1.6em;                   /* Tamanho de texto maior */
-  font-weight: bold;                  /* Texto em negrito */
+  position: fixed;                     
+  top: 0;                              
+  left: 0;                             
+  width: 100%;                         
+  background: #3a6ea5;                 
+  color: white;                        
+  padding: 10px 20px;                  
+  font-size: 1em;                      
+  font-weight: bold;                   
+  box-shadow: 0 2px 6px rgba(155, 89, 182, 0.2); 
+  text-align: center;                  
+  letter-spacing: 0.5px;               
+  border-bottom: 2px solid #c9e9f7;    
+  z-index: 1000;                       
 }
-h2{
-  color:black;
+
+/* aumenta o tamanho das letras do menu */
+header nav a {
+  font-size: 1.2em;     /* aumenta o tamanho da fonte */
+  margin: 0 10px;       /* espaçamento entre os links */
+  color: white;         /* mantém a cor branca */
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+header nav a:hover {
+  opacity: 0.8;         /* efeito suave ao passar o mouse */
 }

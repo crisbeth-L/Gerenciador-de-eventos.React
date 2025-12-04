@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-  color: #3a6ea5;              /* azul médio no hover */
+  color: #ffffff;              /* azul médio no hover */
   text-decoration: underline;
 }
 
@@ -57,7 +57,7 @@ a:hover {
    =============================== */
 
 main {
-  margin-top: 30px;
+  margin-top: 70px;
   width: 90%;
   max-width: 900px;
   margin-left: auto;
@@ -67,8 +67,8 @@ main {
 
 /* Títulos */
 h2, h1 {
-  color: #1f3c88; /* azul escuro elegante */
-  margin-bottom: 10px;
+  color: #000000; /* azul escuro elegante */
+  margin-bottom: 5px;
   text-align: center;
 }
 
@@ -217,8 +217,4 @@ button:hover,
     padding: 20px;
   }
 }
-
-/* ===============================
-   HEADER E FOOTER
-   =============================== */
 
