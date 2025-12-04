@@ -14,35 +14,34 @@ import Login from "./paginas/Login";
 
 function App() {
   const [eventos, setEventos] = useState([]);
-  const [logado, setLogado] = useState(false); // ✅ agregado
+  const [logado, setLogado] = useState(false);
 
   function handleCadastrarEvento(novoEvento) {
     setEventos([...eventos, novoEvento]);
-    console.log("Evento cadastrado:", novoEvento);
+  }
+
+  function handleLogout() {
+    setLogado(false);   
   }
 
   return (
     <Router>
       <div className="app">
-        {logado && <Header />} {/* ✅ solo aparece si está logado */}
+        {logado && <Header onLogout={handleLogout} />} 
 
         <Routes>
-          {/* ✅ Login */}
           <Route path="/" element={<Login setLogado={setLogado} />} />
 
-          {/* ✅ Home protegida */}
           <Route
             path="/home"
             element={logado ? <Home eventos={eventos} /> : <Navigate to="/" />}
           />
 
-          {/* ✅ Sobre protegida */}
           <Route
             path="/sobre"
             element={logado ? <Sobre /> : <Navigate to="/" />}
           />
 
-          {/* ✅ Cadastro protegido */}
           <Route
             path="/CadastroEvento"
             element={
@@ -55,7 +54,7 @@ function App() {
           />
         </Routes>
 
-        {logado && <Footer />} {/* ✅ solo aparece si está logado */}
+        {logado && <Footer />}
       </div>
     </Router>
   );

@@ -1,18 +1,18 @@
-/* Formulário */
+
 .form-evento {
   display: flex;
   flex-direction: column;
   align-items: center;   /* centraliza os eventos */
 }
 
-/* Labels */
+
 .form-evento label {
   margin: 10px 0 5px;
   font-weight: bold;
   align-self: center;    /* centraliza os labels */
 }
 
-/* Inputs */
+
 .form-evento input {
   padding: 10px;
   border: none;
@@ -25,7 +25,7 @@
   text-align: center;    /* centraliza o texto dentro do input */
 }
 
-/* Botões */
+
 .btn-salvar {
   background-color: #0072bb;
   color: white;

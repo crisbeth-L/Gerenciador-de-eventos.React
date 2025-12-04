@@ -16,7 +16,7 @@ function Home({ eventos }) {
       {/* Eventos dinâmicos */}
       {eventos && eventos.length > 0 && (
         <>
-          <h3>Eventos adicionados pelo usuário:</h3>
+          <h3>Eventos adicionados recientemente pelo usuário:</h3>
           {eventos.map((evento) => (
             <Evento
               key={evento.id}

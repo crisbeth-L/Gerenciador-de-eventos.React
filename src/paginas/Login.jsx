@@ -12,9 +12,9 @@ function Login({ setLogado }) {
 
     const emailsPermitidos = ["Crisbeth@gmail.com", "Catherine@gmail.com"];
 
-    if (emailsPermitidos.includes(email) && senha === "123456") {
-      setLogado(true); // ✅ agregado
-      navigate("/home"); // ✅ redirección automática
+    if (emailsPermitidos.includes(email) && senha === "123456") {//confirmação dos usuários3
+      setLogado(true); // 
+      navigate("/home"); // Faz com que depois do Login seja aberto o Home 
     } else {
       alert("Email ou senha inválidos!");
     }

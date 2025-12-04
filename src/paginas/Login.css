@@ -1,45 +1,77 @@
+/* Contenedor principal */
 .login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    background: linear-gradient(to right, #1f3c88, #3a6ea5); /* azul profissional degradê */
-    padding: 30px;
-    border-radius: 15px;
-    max-width: 500px;
-    margin: 40px auto;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-    color: #fff;
-  }
-  
-  .login-container form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-  }
-  
-  .login-container input {
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: center; /* centraliza texto dentro do input */
-  }
-  
-  .login-container button {
-    padding: 10px;
-    background-color: #1f3c88; /* azul escuro corporativo */
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .login-container button:hover {
-    background-color: #162d66; /* azul mais escuro no hover */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #1f3c88, #3a6ea5);
+  padding: 40px 30px;
+  border-radius: 18px;
+  max-width: 420px;
+  margin: 80px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Animación suave al cargar */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 15px;
+}
+
+
+.login-container input {
+  margin: 12px 0;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+
+.login-container input:focus {
+  border: 2px solid #1f3c88;
+  box-shadow: 0 0 8px rgba(31, 60, 136, 0.4);
+}
+
+
+.login-container button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #1f3c88;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #162d66;
+  transform: scale(1.03);
+}
+
+
+.login-container h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
